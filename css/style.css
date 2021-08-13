@@ -163,7 +163,8 @@ html {
 }
 
 #home .buttons {
-    margin-top: 60px;
+    margin-top: 3.75rem/* 60/16 */
+    ;
 }
 
 #home .buttons a {
@@ -379,6 +380,13 @@ section.dark .section-title::after {
     color: rgba(116, 108, 108, 0.5);
 }
 
+.service p {
+    font: 900 20px '';
+    color: rgba(255, 255, 255, .3);
+    /* 设置字体间距 */
+    letter-spacing: 3px;
+}
+
 .service:hover a {
     color: rgba(0, 0, 0, .5);
 }
@@ -396,7 +404,7 @@ section.dark .section-title::after {
     border-radius: 50%;
     background-color: rgb(240, 160, 0);
     position: absolute;
-    top: 340px;
+    top: 400px;
     left: -40px;
     z-index: -1;
 }
@@ -410,7 +418,7 @@ section.dark .section-title::after {
     border-radius: 50%;
     background-color: #77fdd7;
     position: absolute;
-    top: 200px;
+    top: 240px;
     left: 160px;
     z-index: -1;
 }
