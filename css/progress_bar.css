@@ -1,65 +1,59 @@
-:root{
-    --color-red:#da4747;
-    --color-yellow:#fac354;
-    --color-green:#73cc3b;
+:root {
+    --color-red: #da4747;
+    --color-yellow: #fac354;
+    --color-green: #73cc3b;
     --color-blue: #239ef7;
-    --rgb-black:0,0,0;
+    --rgb-black: 0, 0, 0;
 }
 
-.row text-center{
-    display:flex;
-    justify-content:space-between; 
-}
-.col-lg-3{
-    display:flex;
-    justify-content:space-between; 
+.row text-center {
+    display: flex;
+    justify-content: space-between;
 }
 
-.wrapper{
+.col-lg-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
     margin-top: 80px;
 }
 
 .progressbar:not(.circle) svg,
-.progressbar:not(.circle) svg path{
+.progressbar:not(.circle) svg path {
     border-radius: 20px;
 }
 
-.progressbar svg path:first-child{
+.progressbar svg path:first-child {
     stroke: rgba(var(--rgb-black), 0.09);
 }
 
-
-
-.progressbar.border{
-   border: 1px solid transparent;
-box-sizing: border-box;
+.progressbar.border {
+    border: 1px solid transparent;
+    box-sizing: border-box;
 }
 
-
-.progressbar.border svg path:first-child{
+.progressbar.border svg path:first-child {
     stroke: transparent;
 }
 
-
-.progressbar.line svg{
+.progressbar.line svg {
     height: 10px;
 }
 
-
-.progressbar.line.border svg{
+.progressbar.line.border svg {
     height: 8px;
 }
 
-
-.progressbar.circle{
+.progressbar.circle {
     position: relative;
     margin: 0 auto 30px;
     width: 170px;
     height: 85px;
 }
 
-
-.progressbar.circle .progressbar-text{
+.progressbar.circle .progressbar-text {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -74,7 +68,7 @@ box-sizing: border-box;
     font-weight: bold;
 }
 
-.progressbar.circle .progressbar-text:after{
+.progressbar.circle .progressbar-text:after {
     content: "%";
     display: block;
     font-size: 20px;
@@ -82,52 +76,34 @@ box-sizing: border-box;
     padding-bottom: 5px;
 }
 
-
-.progressbar.red svg path:last-child{
+.progressbar.red svg path:last-child {
     stroke: var(--color-red)
-    
 }
 
- 
-
-.progressbar.blue svg path:last-child{
+.progressbar.blue svg path:last-child {
     stroke: var(--color-blue)
-    
 }
 
-  
-
-.progressbar.green svg path:last-child{
+.progressbar.green svg path:last-child {
     stroke: var(--color-green)
-    
 }
 
- 
-.progressbar.yellow svg path:last-child{
+.progressbar.yellow svg path:last-child {
     stroke: var(--color-yellow)
-    
 }
 
-h5{
+h5 {
     background: transparent;
     padding: 25px;
-   
-    margin:auto;;
+    margin: auto;
     border-radius: 50px;
     border: 2px solid #ebebeb;
     font-size: 1rem;
     color: white;
     display: inline-block;
     width: 110px;
-
-
 }
- 
 
-p{
+p {
     margin-top: 40px;
-
 }
-
-
-
