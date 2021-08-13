@@ -1,11 +1,10 @@
 :root{
-    --color-red:#d75959;
-    --color-yellow:#f5c463;
-    --color-green:#9ccd7e;
-    --color-blue: #5ca7db;
+    --color-red:#da4747;
+    --color-yellow:#fac354;
+    --color-green:#73cc3b;
+    --color-blue: #239ef7;
     --rgb-black:0,0,0;
 }
-
 
 .row text-center{
     display:flex;
