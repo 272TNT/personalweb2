@@ -433,6 +433,7 @@ section.dark .section-title::after {
     position: absolute;
     top: 400px;
     left: -40px;
+    z-index: -99;
 }
 .dd{
     width: 200px;
