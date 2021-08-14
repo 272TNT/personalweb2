@@ -15,15 +15,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="http://at.alicdn.com/t/font_2743828_6wdmm4qy9jh.js"></script>
+    <script src="http://at.alicdn.com/t/font_2743828_1l7cdu7rbsg.js"></script>
 
 </head>
 
-<!-- <style type="text/css">
-    .icon {
-        width: 2em;
-        height: 2em;
-        vertical-align: -0.15em;
+<style type="text/css">
+    .p-icon {
+        width:1em;
+        height: 1em;
+        vertical-align: -0.15em;/* 因icon大小被设置为和字体大小一致，
+        而span等标签的下边缘会和字体的基线对齐，故需设置一个往下的偏移
+        比例，来纠正视觉上的未对齐效果 */
         fill: currentColor;
         overflow: hidden;
         font-size: 2rem;
@@ -198,51 +200,68 @@
 
             <div class="services">
                 <div class="service">
-                    <i class="icon fas fa-paint-brush"></i>
+                    
+                    <!-- <i class="icon fas fa-paint-brush"></i> -->
+                    <i><svg class="iccon" ">
+                        <use xlink:href="#icon-aliyun"></i>
                     <a href="aliyun.html">Aliyun Centos部署</a>
                     <p>Lunix命令是基础</p>
                     <div class="cc"></div>
                     <div class="dd"></div>
+                    
                 </div>
+                
 
 
                 <div class="service">
                     <!-- <img src="/images/contact/GitHub.png" alt=""> -->
-                    <i class="icon fas fa-pager"></i>
+                    <!-- <i class="icon fas fa-pager"></i> -->
+                    <i><svg class="iccon" ">
+                        <use xlink:href="#icon-github"></i>
                     <a href="web-build.html">Github-page建站</a>
                     <p>操作完后，别急，让子弹飞一会</p>
                 </div>
 
                 <div class="service">
-                    <i class="icon fas fa-database"></i>
-                    <a href="login.html">Glassmorphism Login Form</a>
-                    <p>前端架构是一门艺术</p>
+                    <!-- <i class="icon fas fa-database"></i> -->
+                    <i><svg class="iccon" ">
+                        <use xlink:href="#icon-huihua"></i>
+                    <a href="login.html">Glassmorphism Login</a>
                     <div class="cc"></div>
                     <div class="dd"></div>
+                    <p>前端架构是一门艺术</p>
+               
                 </div>
 
                 <div class="service">
-                    <i class=" icon fab fa-android "></i>
+                    <!-- <i class=" icon fab fa-android "></i> -->
+                    <i><svg class="iccon" ">
+                        <use xlink:href="#icon-a-ziyuan26-copy"></i>
                     <a>打开月亮的灯</a>
                     <p>你知道，当你感到悲伤的时候，就会喜欢看日落</p>
                 </div>
 
                 <div class="service ">
-                    <i class="icon fas fa-credit-card "></i>
+                    <!-- <i class="icon fas fa-credit-card "></i> -->
+                    <i><svg class="iccon" ">
+                        <use xlink:href="#icon-hanhan-01-01"></i>
                     <a href="photoalubm.html">Photo Alubm</a>
-                    <p>稳住，我们能赢</p>
+                    <p>稳住，我们能赢<svg class="p-icon" ">
+                        <use xlink:href="#icon-emoji-"></use>
+                    </svg></p>
                 </div>
 
                 <div class="service ">
-                    <i class="icon fas fa-keyboard "></i>
+                    <!-- <i class="icon fas fa-keyboard "></i> -->
+                    <i><svg class="iccon" ">
+                        <use xlink:href="#icon-markdown-fill"></i>
                     <a>Markdown</a>
                     <p>阿瓦达啃大瓜</p>
                 </div>
-
             </div>
         </div>
     </section>
-
+   
 
 
     <!-- Education -->

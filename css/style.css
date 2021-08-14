@@ -43,7 +43,7 @@ html {
 .inner-width {
     max-width: 1300px;
     margin: auto;
-    padding: 0 40px
+    padding: 0 40px;
 }
 
 .navbar .inner-width {
@@ -55,7 +55,7 @@ html {
 .logo {
     width: 44px;
     height: 32px;
-    background-image: url(/images/white-logo.png);
+    background-image: url(../images/white-logo.png);
     background-size: contain;
 }
 
@@ -97,7 +97,7 @@ html {
 }
 
 .sticky .logo {
-    background-image: url(/images/black-logo.png);
+    background-image: url(../images/black-logo.png);
 }
 
 .sticky .navbar-menu a {
@@ -111,7 +111,7 @@ html {
 #home {
     height: 100vh;
     min-height: 500px;
-    background: url(/images/bg.jpg) no-repeat center;
+    background: url(../images/bg.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -367,21 +367,35 @@ section.dark .section-title::after {
 }
 
 .service .icon {
-    color: rgba(116, 108, 108, 0.5);
+    color: gray;
     font-size: 40px;
     margin-bottom: 20px;
     transition: .3s linear;
 }
+.service .iccon{
+    width:50px  ;
+    height: 50px;
+    vertical-align: -0.15em;/* 因icon大小被设置为和字体大小一致，
+    而span等标签的下边缘会和字体的基线对齐，故需设置一个往下的偏移
+    比例，来纠正视觉上的未对齐效果 */
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+    color: rgba(156, 138, 138, 0.828);;
+    transition: .3s linear;
+}
 
 .service a {
-    font: 600 20px '';
-    top: 17px;
+    display: block;
+    font: 900 20px '';
+    bottom: 80px;
     left: 70px;
-    color: rgba(116, 108, 108, 0.5);
+    color:  rgba(156, 138, 138, 0.828);;
+
 }
 
 .service p {
-    font: 900 20px '';
+    font: 900 1.25rem /* 20/16 */ '';
     color: rgba(255, 255, 255, .3);
     /* 设置字体间距 */
     letter-spacing: 3px;
@@ -394,9 +408,11 @@ section.dark .section-title::after {
 .service:hover .icon {
     color: rgba(0, 0, 0, .5);
 }
+.service:hover .iccon {
+    color: rgba(0, 0, 0, .5);
+}
 
-.service .cc {
-    display: flex;
+/* .cc {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 160px;
@@ -407,22 +423,27 @@ section.dark .section-title::after {
     top: 400px;
     left: -40px;
     z-index: -1;
-}
+} */
 
-.service .dd {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.cc{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: rgb(240,160,0);
+    position: absolute;
+    top: 400px;
+    left: -40px;
+}
+.dd{
     width: 200px;
     height: 200px;
     border-radius: 50%;
     background-color: #77fdd7;
     position: absolute;
-    top: 240px;
-    left: 160px;
-    z-index: -1;
+    top: 250px;
+    left: 200px;
+    z-index: -99;
 }
-
 .time-line,
 .works {
     display: flex;
