@@ -162,11 +162,13 @@ html {
     color: #48dbfb;
 }
 
-#home .buttons {
-    margin-top: 3.75rem/* 60/16 */
-    ;
-}
 
+
+/* ------------------ */
+
+#home .buttons {
+    margin-top: 3.75rem/* 60/16 */;
+}
 #home .buttons a {
     display: inline-block;
     margin: 15px 30px;
@@ -426,8 +428,8 @@ section.dark .section-title::after {
 } */
 
 .cc{
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: rgb(240,160,0);
     position: absolute;
@@ -436,13 +438,13 @@ section.dark .section-title::after {
     z-index: -99;
 }
 .dd{
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     border-radius: 50%;
     background-color: #77fdd7;
     position: absolute;
     top: 250px;
-    left: 200px;
+    left: 170px;
     z-index: -99;
 }
 .time-line,
@@ -542,12 +544,13 @@ section.dark .section-title::after {
 
 .contact-info {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 60px;
 }
 
-.contact-info .item {
+.item {
     width: calc(33% - 20px);
     height: 160px;
     background-color: #353b48;
@@ -556,18 +559,51 @@ section.dark .section-title::after {
     border-radius: 4px;
     cursor: pointer;
     transition: .3s linear;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .contact-info i {
     display: block;
-    font-size: 40px;
-    line-height: 120px;
-    height: 100px;
+    
 }
 
-.contact-info .item:hover {
-    background-color: #48dbfb;
+ .card-icon{
+    position: relative;
+   left: calc(50% - 30px);
+    top:calc(50% - 30px) ;
+    font-size:30px;
+    height: 60px;
+    width: 60px;
+    background: #ff6348;
+    line-height: 60px !important;
+    border-radius: 50%;
+    transition: 0.3s linear;
+} 
+.item:hover .card-icon{
+    background: none;
+    color: #ff6348;
+    transform: scale(1.4);
+
 }
+
+.item p{
+    margin-top: 55px;
+    font-weight: 18.75rem /* 300/16 */;
+    letter-spacing: 1px;
+    max-height: 0px;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+.item:hover p{
+    max-height: 40px;
+    font-weight: 300px;
+    opacity: 1;
+    max-height: 0;
+
+}
+
 
 .contact-form {
     display: flex;
@@ -640,13 +676,8 @@ footer {
     right: 40px;
     width: 40px;
     height: 40px;
-    background-color: #48dbfb;
-    border: none;
-    border-radius: 6px;
     cursor: pointer;
-    color: #fff;
-    outline: none;
-    display: none;
+
 }
 
 @media screen and (max-width: 980px) {
