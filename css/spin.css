@@ -68,6 +68,6 @@
     top: 30px;
     border-radius: 50%;
     border: #fff 3px solid;
-    background-image: url(../images/profile_picture.png);
-    background-size: cover;
+    background-image: url(../images/pic2.png);
+    background-size: 200px 250px;
 }

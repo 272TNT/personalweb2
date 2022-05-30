@@ -98,12 +98,14 @@ h5 {
     margin: auto;
     border-radius: 50px;
     border: 2px solid #ebebeb;
-    font-size: 1rem;
+    font-size: 30px;
     color: white;
     display: inline-block;
-    width: 110px;
+    text-align:center;
+    width: 170px;
 }
 
 p {
     margin-top: 40px;
+    font-size: 25px;
 }
